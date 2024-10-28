@@ -10,3 +10,15 @@ color: #fff;
 
 `
 
+
+
+
+export const ButtonHome = styled.button`
+  background-color: ${({ primary }) => (primary ? '#007bff' : '#e0e0e0')};
+  color: ${({ primary }) => (primary ? '#ffffff' : '#333')};
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+`;
+
