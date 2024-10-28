@@ -17,6 +17,7 @@ margin: 0 auto;
 display: flex;
 justify-content: center;
 align-items: center;
+background: linear-gradient(180deg, #56CCF2 0%, #2F80ED 100%);
 `
 
 export default Login;
