@@ -1,4 +1,4 @@
-import {Login} from '../molecule/label_input'
+import {Login} from '../molecule/loginSystem'
 
 
 export const Form = () => {
