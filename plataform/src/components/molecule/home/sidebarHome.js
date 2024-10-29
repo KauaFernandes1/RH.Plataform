@@ -40,16 +40,24 @@ const SidebarIcon = styled.i`
 `;
 
 const BottomSection = styled.div`
-  position: absolute;
-  bottom: 20px;
-  width: 210px;
+
 `;
 
 const BottomLink = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
+  gap: 8px;
+
   color: #333;
+  padding: 10px;
+  border-radius: 4rem;
+  background-color: #f5f7fa;
+  transition: 1s;
+    &:hover {
+    background-color: #238DFF;
+    color: white;
+  }
 `;
 
 const ProfileImage = styled.img`
@@ -78,6 +86,20 @@ export const SidebarOrigin = () => {
     return (
 
 <Sidebar>
+<BottomSection>
+  <BottomLink href="#">
+    <ProfileImage
+      alt="User profile picture"
+      height="40"
+      src="https://storage.googleapis.com/a1aa/image/YkneXa9TX9QaBKwOSGxAIU8LteHF9N5XVXpvpZsENUjgjXrTA.jpg"
+      width="40"
+    />
+    Pedro Zero hora
+
+
+    <Notification className="fas fa-bell" />
+  </BottomLink>
+</BottomSection>
 <SidebarHeader>Menu</SidebarHeader>
 <SidebarList>
   <SidebarItem>
@@ -135,18 +157,7 @@ export const SidebarOrigin = () => {
     </SidebarLink>
   </SidebarItem>
 </SidebarList>
-<BottomSection>
-  <BottomLink href="#">
-    <ProfileImage
-      alt="User profile picture"
-      height="40"
-      src="https://storage.googleapis.com/a1aa/image/YkneXa9TX9QaBKwOSGxAIU8LteHF9N5XVXpvpZsENUjgjXrTA.jpg"
-      width="40"
-    />
-    Pedro Zero hora
-    <Notification className="fas fa-bell" />
-  </BottomLink>
-</BottomSection>
+
 </Sidebar>
 
     )
