@@ -1,8 +1,8 @@
-import {NotificationCard} from '../molecule/notificationBox'
-import {CardsStatistics} from '../molecule/statisticCards'
-import {SidebarOrigin} from '../molecule/sidebarHome'
-import {QuickActionCard} from '../molecule/quickAction'
-import {VisionCard} from '../molecule/visionCard'
+import {NotificationCard} from '../molecule/home/notificationBox'
+import {CardsStatistics} from '../molecule/home/statisticCards'
+import {SidebarOrigin} from '../molecule/home/sidebarHome'
+import {QuickActionCard} from '../molecule/home/quickAction'
+import {VisionCard} from '../molecule/home/visionCard'
 
 
 import styled from 'styled-components'
