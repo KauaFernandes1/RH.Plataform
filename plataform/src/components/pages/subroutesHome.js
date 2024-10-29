@@ -1,34 +1,21 @@
+import {FuncionariosSection} from '../organism/subroutes/layoutFuncionarios'
 
 
-
-// subrota ajuda
-export const 
-AjudaRoute = () => {
-    return (
-        <div>dm</div>
-    )
-}
-
-export const 
-AutorizacaoRoute = () => {
-    return (
-        <div>dm</div>
-    )
-}
-
-
-export const 
-CalendarioRoute = () => {
-    return (
-        <div>dm</div>
-    )
-}
 
 
 export const
-ContasPagarRoute = () => {
+FuncionariosRoute = () => {
     return (
-        <div>dnd</div>
+        <div><FuncionariosSection/></div>
+    )
+}
+
+
+
+export const 
+HoleritesRoute = () => {
+    return (
+        <div>din</div>
     )
 }
 
@@ -36,6 +23,15 @@ ContasPagarRoute = () => {
 
 export const 
 DocumentosRoute = () => {
+    return (
+        <div>dnd</div>
+    )
+}
+
+
+
+export const
+ContasPagarRoute = () => {
     return (
         <div>dnd</div>
     )
@@ -51,21 +47,23 @@ EventosRoute = () => {
 }
 
 
-export const
-GestaoFuncionariosRoute = () => {
+
+export const 
+AutorizacaoRoute = () => {
     return (
-        <div>din</div>
+        <div>dm</div>
     )
 }
 
 
 
 export const 
-HoleritesRoute = () => {
+CalendarioRoute = () => {
     return (
-        <div>din</div>
+        <div>dm</div>
     )
 }
+
 
 
 export const 
@@ -74,6 +72,30 @@ ReunioesRoute = () => {
         <div>din</div>
     )
 }
+
+
+// subrota ajuda
+export const 
+AjudaRoute = () => {
+    return (
+        <div>dm</div>
+    )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

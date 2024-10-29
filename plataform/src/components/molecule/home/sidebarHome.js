@@ -109,7 +109,7 @@ export const SidebarOrigin = () => {
   </SidebarItem>
   <SidebarItem>
     <SidebarLink href="/GestaoFuncionarios">
-      <SidebarIcon className="fas fa-building" /> Gestão Funcionarios
+      <SidebarIcon className="fas fa-building" /> Funcionarios
     </SidebarLink>
   </SidebarItem>
   <SidebarItem>
