@@ -1,4 +1,4 @@
-import {Form} from '../organism/formLogin'
+import {Form} from '../organism/layoutLogin'
 import styled from 'styled-components'
 
 const Login = () => {
