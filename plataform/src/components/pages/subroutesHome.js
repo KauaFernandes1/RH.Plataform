@@ -1,4 +1,6 @@
 import {FuncionariosApp} from '../organism/subroutes/layoutFuncionarios'
+import Contas from '../organism/subroutes/LayoutContas'
+import Eventos from '../organism/subroutes/layoutEventos'
 
 
 
@@ -33,7 +35,7 @@ DocumentosRoute = () => {
 export const
 ContasPagarRoute = () => {
     return (
-        <div>dnd</div>
+        <Contas/>
     )
 }
 
@@ -42,7 +44,7 @@ ContasPagarRoute = () => {
 export const 
 EventosRoute = () => {
     return (
-        <div>dnd</div>
+        <Eventos/>
     )
 }
 
