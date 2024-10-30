@@ -1,6 +1,7 @@
 import {FuncionariosApp} from '../organism/subroutes/layoutFuncionarios'
 import Contas from '../organism/subroutes/LayoutContas'
 import Eventos from '../organism/subroutes/layoutEventos'
+import Reuniao from '../organism/subroutes/layoutReuniao'
 
 
 
@@ -53,7 +54,7 @@ EventosRoute = () => {
 export const 
 AutorizacaoRoute = () => {
     return (
-        <div>dm</div>
+        <></>
     )
 }
 
@@ -71,7 +72,7 @@ CalendarioRoute = () => {
 export const 
 ReunioesRoute = () => {
     return (
-        <div>din</div>
+        <Reuniao/>
     )
 }
 

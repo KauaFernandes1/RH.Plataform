@@ -21,7 +21,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/home" element={<MainContent />}>
+        <Route path="/Home" element={<MainContent />}>
           {/* Definindo subrotas */}
           <Route path="funcionarios" element={<FuncionariosRoute />} />
           <Route path="holerites" element={<HoleritesRoute />} />
