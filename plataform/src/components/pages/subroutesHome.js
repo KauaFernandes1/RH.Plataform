@@ -1,4 +1,4 @@
-import {FuncionariosSection} from '../organism/subroutes/layoutFuncionarios'
+import {FuncionariosApp} from '../organism/subroutes/layoutFuncionarios'
 
 
 
@@ -6,7 +6,7 @@ import {FuncionariosSection} from '../organism/subroutes/layoutFuncionarios'
 export const
 FuncionariosRoute = () => {
     return (
-        <div><FuncionariosSection/></div>
+        <div><FuncionariosApp/></div>
     )
 }
 
