@@ -1,11 +1,11 @@
+import React from 'react';
 import { NotificationCard } from '../molecule/home/notificationBox';
 import { CardsStatistics } from '../molecule/home/statisticCards';
 import { SidebarOrigin } from '../molecule/home/sidebarHome';
 import { QuickActionCard } from '../molecule/home/quickAction';
 import { VisionCard } from '../molecule/home/visionCard';
-
 import styled from 'styled-components';
-import { Outlet } from 'react-router-dom';  // Importe o Outlet aqui
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 const Container = styled.div`
   display: flex;
@@ -19,31 +19,31 @@ const MainContent = styled.div`
   background-color: #f5f7fa;
 `;
 
-const MainHeader = styled.h1`
-  font-size: 24px;
-  margin-bottom: 10px;
-`;
-
-const MainText = styled.p`
-  color: #666;
-  margin-bottom: 20px;
-`;
-
 const HomeContent = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Verifica se está na rota "/home"
+  const isHomeRoute = location.pathname === '/home';
+
   return (
     <Container>
-      <SidebarOrigin />
+      <SidebarOrigin navigate={navigate} />
       <MainContent>
-        <MainHeader>Bem vindo de volta!</MainHeader>
-        <MainText>Lembre-se de verificar seus emails sempre que possível!</MainText>
-        
-        {/* Componentes fixos */}
-        <CardsStatistics />
-        <NotificationCard />
-        <QuickActionCard />
-        <VisionCard />
+        {isHomeRoute && (
+          <>
+            <h1>Bem vindo de volta!</h1>
+            <p>Lembre-se de verificar seus emails sempre que possível!</p>
+            
+            {/* Componentes fixos que só aparecem na rota "/home" */}
+            <CardsStatistics />
+            <NotificationCard />
+            <QuickActionCard />
+            <VisionCard />
+          </>
+        )}
 
-        {/* Componente Outlet para renderizar as subrotas */}
+        {/* Renderizando o conteúdo das subrotas */}
         <Outlet />
       </MainContent>
     </Container>

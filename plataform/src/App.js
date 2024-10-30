@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./components/pages/login.js";
-import Home from './components/pages/home.js';
+import MainContent from './components/organism/layoutHome.js';  // Certifique-se de que está usando o nome correto aqui
 
-// subrotas de home
+// Importando as páginas das subrotas
 import {
   AjudaRoute,
   AutorizacaoRoute,
@@ -14,25 +14,24 @@ import {
   FuncionariosRoute,
   HoleritesRoute,
   ReunioesRoute
-} from './components/pages/subroutesHome.js';
+} from './components/pages/subroutesHome';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
-        
-        {/* Rota principal de Home com subrotas */}
-        <Route path="/home" element={<Home />}>
-          <Route path="/home/funcionarios" element={<FuncionariosRoute />} />
-          <Route path="Holerites" element={<HoleritesRoute />} />
-          <Route path="Documentos" element={<DocumentosRoute />} />
-          <Route path="ContasAPagar" element={<ContasPagarRoute />} />
-          <Route path="Eventos" element={<EventosRoute />} />
-          <Route path="Autorizacoes" element={<AutorizacaoRoute />} />
-          <Route path="Calendario" element={<CalendarioRoute />} />
-          <Route path="Reunioes" element={<ReunioesRoute />} />
-          <Route path="Ajuda" element={<AjudaRoute />} />
+        <Route path="/home" element={<MainContent />}>
+          {/* Definindo subrotas */}
+          <Route path="funcionarios" element={<FuncionariosRoute />} />
+          <Route path="holerites" element={<HoleritesRoute />} />
+          <Route path="documentos" element={<DocumentosRoute />} />
+          <Route path="contas" element={<ContasPagarRoute />} />
+          <Route path="eventos" element={<EventosRoute />} />
+          <Route path="autorizacoes" element={<AutorizacaoRoute />} />
+          <Route path="calendario" element={<CalendarioRoute />} />
+          <Route path="reunioes" element={<ReunioesRoute />} />
+          <Route path="ajuda" element={<AjudaRoute />} />
         </Route>
       </Routes>
     </Router>
